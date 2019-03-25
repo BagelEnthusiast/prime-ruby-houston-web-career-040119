@@ -1,6 +1,6 @@
 # Add  code here!
 def prime?(integer)
-  
+  if 
 end
 
 puts prime?(4)
