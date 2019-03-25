@@ -7,9 +7,13 @@ def myMethod(integer)
     next unless p 
     break if p*p > max
     counter += log10
-    (p*p).step(max,p)
-  
+    (p*p).step(max,p) { |m| primes[m] = nil}
+  end
+  primes.compact
 end
 
+def prime?(integer)
+  myMethod(integer).include?(integer)
+end
 puts prime?(4)
 puts prime?(7)
