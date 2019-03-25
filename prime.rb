@@ -1,5 +1,5 @@
 # Add  code here!
-def (integer)
+def myMethod(integer)
   primes = (0..max).to_a
   primes[0] = primes[1] = nil
   counter = 0 
@@ -7,6 +7,7 @@ def (integer)
     next unless p 
     break if p*p > max
     counter += log10
+    (p*p).step(max,p)
   
 end
 
