@@ -2,6 +2,7 @@
 def myMethod(integer)
   primes = (0..1000000).to_a
   primes[0] = primes[1] = nil
+  
   counter = 0 
   primes.each do |p|
     next unless p 
