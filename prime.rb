@@ -1,6 +1,6 @@
 # Add  code here!
 def prime?(integer)
-  if integer 
+  primes = (0..max).to_a
 end
 
 puts prime?(4)
