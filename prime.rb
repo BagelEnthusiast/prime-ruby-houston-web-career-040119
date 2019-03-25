@@ -6,7 +6,7 @@ def myMethod(integer)
   primes.each do |p|
     next unless p 
     break if p*p > 1000000
-    counter += 
+    counter += 1
     (p*p).step(1000000,p) { |m| primes[m] = nil}
   end
   primes.compact
